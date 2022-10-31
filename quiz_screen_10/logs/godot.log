@@ -1,0 +1,16 @@
+Godot Engine v3.4.3.rc1.official.894b6d504 - https://godotengine.org
+OpenGL ES 3.0 Renderer: Radeon (TM) RX 470 Graphics
+OpenGL ES Batching: ON
+ 
+ERROR: Resource file not found: res://assets/images/artwork-digital-art-abstract-simple-background-wallpaper-preview.jpg.
+   at: _load (core/io/resource_loader.cpp:275) - Condition "!file_check->file_exists(p_path)" is true. Returned: RES()
+ERROR: res://quiz_10.tscn:3 - Parse Error: [ext_resource] referenced nonexistent resource at: res://assets/images/artwork-digital-art-abstract-simple-background-wallpaper-preview.jpg
+   at: poll (scene/resources/resource_format_text.cpp:412) - res://quiz_10.tscn:3 - Parse Error: [ext_resource] referenced nonexistent resource at: res://assets/images/artwork-digital-art-abstract-simple-background-wallpaper-preview.jpg
+ERROR: Failed to load resource 'res://quiz_10.tscn'.
+   at: load (core/io/resource_loader.cpp:206) - Condition "err != OK" is true. Returned: RES()
+ERROR: Failed loading resource: res://quiz_10.tscn. Make sure resources have been imported by opening the project in the editor at least once.
+   at: _load (core/io/resource_loader.cpp:270) - Condition "found" is true. Returned: RES()
+ERROR: Failed loading scene: res://quiz_10.tscn
+   at: start (main/main.cpp:2011) - Condition "!scene" is true. Returned: false
+WARNING: ObjectDB instances leaked at exit (run with --verbose for details).
+   at: cleanup (core/object.cpp:2064) - ObjectDB instances leaked at exit (run with --verbose for details).

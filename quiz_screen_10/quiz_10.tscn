@@ -1,0 +1,380 @@
+[gd_scene load_steps=20 format=2]
+
+[ext_resource path="res://assets/images/artwork-digital-art-abstract-simple-background-wallpaper-preview.jpg" type="Texture" id=1]
+[ext_resource path="res://assets/fonts/Ingenue.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://assets/fonts/ORIOND.TTF" type="DynamicFontData" id=3]
+[ext_resource path="res://quiz_10.gd" type="Script" id=4]
+[ext_resource path="res://current_answer.gd" type="Script" id=5]
+
+[sub_resource type="Theme" id=1]
+
+[sub_resource type="DynamicFont" id=2]
+size = 237
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 39
+font_data = ExtResource( 2 )
+
+[sub_resource type="Theme" id=3]
+
+[sub_resource type="DynamicFont" id=4]
+size = 77
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 39
+font_data = ExtResource( 2 )
+
+[sub_resource type="Theme" id=7]
+
+[sub_resource type="DynamicFont" id=8]
+size = 44
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=9]
+size = 31
+font_data = ExtResource( 3 )
+
+[sub_resource type="Theme" id=13]
+
+[sub_resource type="DynamicFont" id=14]
+size = 36
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=10]
+size = 39
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=11]
+size = 39
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=12]
+size = 39
+font_data = ExtResource( 2 )
+
+[node name="quiz_10" type="Node2D"]
+script = ExtResource( 4 )
+
+[node name="bg" type="TextureRect" parent="."]
+margin_top = 1.0
+margin_right = 1920.0
+margin_bottom = 1080.0
+texture = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="contents" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = 289.0
+margin_top = 54.0
+margin_right = 1631.0
+margin_bottom = 1049.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="QUIZ" type="Label" parent="contents"]
+margin_right = 1342.0
+margin_bottom = 255.0
+theme = SubResource( 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Quiz"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="number" type="HBoxContainer" parent="contents"]
+margin_top = 259.0
+margin_right = 1342.0
+margin_bottom = 333.0
+custom_constants/separation = 18
+alignment = 1
+
+[node name="Button" type="Button" parent="contents/number"]
+margin_left = 435.0
+margin_right = 603.0
+margin_bottom = 74.0
+custom_fonts/font = SubResource( 5 )
+text = "<< Previous"
+
+[node name="#" type="Label" parent="contents/number"]
+margin_left = 621.0
+margin_right = 664.0
+margin_bottom = 74.0
+theme = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
+text = "#"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="Label" parent="contents/number"]
+margin_left = 682.0
+margin_right = 725.0
+margin_bottom = 74.0
+theme = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
+text = "1"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button2" type="Button" parent="contents/number"]
+margin_left = 743.0
+margin_right = 906.0
+margin_bottom = 74.0
+custom_fonts/font = SubResource( 6 )
+text = "    Next>>   "
+
+[node name="marg3" type="MarginContainer" parent="contents"]
+margin_top = 337.0
+margin_right = 1342.0
+margin_bottom = 409.0
+custom_constants/margin_top = 72
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Question" type="Label" parent="contents"]
+margin_top = 413.0
+margin_right = 1342.0
+margin_bottom = 456.0
+theme = SubResource( 7 )
+custom_fonts/font = SubResource( 8 )
+text = "Question"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="marg" type="MarginContainer" parent="contents"]
+margin_top = 460.0
+margin_right = 1342.0
+margin_bottom = 474.0
+custom_constants/margin_top = 14
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="questionnaire" type="LineEdit" parent="contents"]
+margin_top = 478.0
+margin_right = 1342.0
+margin_bottom = 578.0
+rect_min_size = Vector2( 0, 100 )
+custom_fonts/font = SubResource( 9 )
+text = "Who is the richest man in the world?"
+align = 1
+max_length = 77
+editable = false
+context_menu_enabled = false
+virtual_keyboard_enabled = false
+selecting_enabled = false
+placeholder_alpha = 0.664
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="marg2" type="MarginContainer" parent="contents"]
+margin_top = 582.0
+margin_right = 1342.0
+margin_bottom = 632.0
+custom_constants/margin_top = 50
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Answer" type="HBoxContainer" parent="contents"]
+margin_top = 636.0
+margin_right = 1342.0
+margin_bottom = 676.0
+alignment = 1
+
+[node name="Answer" type="Label" parent="contents/Answer"]
+margin_left = 529.0
+margin_top = 2.0
+margin_right = 691.0
+margin_bottom = 37.0
+theme = SubResource( 13 )
+custom_fonts/font = SubResource( 14 )
+text = "Answer : "
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="current_answer" type="LineEdit" parent="contents/Answer"]
+margin_left = 695.0
+margin_right = 813.0
+margin_bottom = 40.0
+custom_fonts/font = SubResource( 9 )
+align = 1
+max_length = 77
+editable = false
+placeholder_alpha = 0.664
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MarginContainer4" type="MarginContainer" parent="contents"]
+margin_top = 680.0
+margin_right = 1342.0
+margin_bottom = 709.0
+custom_constants/margin_top = 29
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="choices" type="VBoxContainer" parent="contents"]
+margin_top = 713.0
+margin_right = 1342.0
+margin_bottom = 921.0
+
+[node name="A" type="HBoxContainer" parent="contents/choices"]
+margin_right = 1342.0
+margin_bottom = 49.0
+
+[node name="MarginContainer" type="MarginContainer" parent="contents/choices/A"]
+margin_right = 178.0
+margin_bottom = 49.0
+custom_constants/margin_right = 178
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="A" type="Label" parent="contents/choices/A"]
+margin_left = 182.0
+margin_top = 3.0
+margin_right = 251.0
+margin_bottom = 46.0
+theme = SubResource( 7 )
+custom_fonts/font = SubResource( 8 )
+text = "A : "
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="answer_a" type="Button" parent="contents/choices/A"]
+margin_left = 255.0
+margin_right = 1155.0
+margin_bottom = 49.0
+rect_min_size = Vector2( 900, 0 )
+custom_fonts/font = SubResource( 5 )
+text = "Elon Musk"
+expand_icon = true
+
+[node name="B" type="HBoxContainer" parent="contents/choices"]
+margin_top = 53.0
+margin_right = 1342.0
+margin_bottom = 102.0
+
+[node name="MarginContainer4" type="MarginContainer" parent="contents/choices/B"]
+margin_right = 178.0
+margin_bottom = 49.0
+custom_constants/margin_right = 178
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="b" type="Label" parent="contents/choices/B"]
+margin_left = 182.0
+margin_top = 3.0
+margin_right = 253.0
+margin_bottom = 46.0
+theme = SubResource( 7 )
+custom_fonts/font = SubResource( 8 )
+text = "B : "
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="answer_b" type="Button" parent="contents/choices/B"]
+margin_left = 257.0
+margin_right = 1157.0
+margin_bottom = 49.0
+rect_min_size = Vector2( 900, 0 )
+custom_fonts/font = SubResource( 10 )
+text = "Jeff Bezos"
+
+[node name="C" type="HBoxContainer" parent="contents/choices"]
+margin_top = 106.0
+margin_right = 1342.0
+margin_bottom = 155.0
+
+[node name="MarginContainer3" type="MarginContainer" parent="contents/choices/C"]
+margin_right = 178.0
+margin_bottom = 49.0
+custom_constants/margin_right = 178
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="c" type="Label" parent="contents/choices/C"]
+margin_left = 182.0
+margin_top = 3.0
+margin_right = 253.0
+margin_bottom = 46.0
+theme = SubResource( 7 )
+custom_fonts/font = SubResource( 8 )
+text = "C : "
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="answer_c" type="Button" parent="contents/choices/C"]
+margin_left = 257.0
+margin_right = 1157.0
+margin_bottom = 49.0
+rect_min_size = Vector2( 900, 0 )
+custom_fonts/font = SubResource( 11 )
+text = "Marck Zuckerberg"
+
+[node name="D" type="HBoxContainer" parent="contents/choices"]
+margin_top = 159.0
+margin_right = 1342.0
+margin_bottom = 208.0
+
+[node name="MarginContainer2" type="MarginContainer" parent="contents/choices/D"]
+margin_right = 178.0
+margin_bottom = 49.0
+custom_constants/margin_right = 178
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="D" type="Label" parent="contents/choices/D"]
+margin_left = 182.0
+margin_top = 3.0
+margin_right = 253.0
+margin_bottom = 46.0
+theme = SubResource( 7 )
+custom_fonts/font = SubResource( 8 )
+text = "D : "
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="answer_d" type="Button" parent="contents/choices/D"]
+margin_left = 257.0
+margin_right = 1157.0
+margin_bottom = 49.0
+rect_min_size = Vector2( 900, 0 )
+custom_fonts/font = SubResource( 12 )
+text = "Bill Gates"
+
+[connection signal="pressed" from="contents/choices/A/answer_a" to="contents/Answer/current_answer" method="_on_answer_a_pressed"]
+[connection signal="pressed" from="contents/choices/B/answer_b" to="contents/Answer/current_answer" method="_on_answer_b_pressed"]
+[connection signal="pressed" from="contents/choices/C/answer_c" to="contents/Answer/current_answer" method="_on_answer_c_pressed"]
+[connection signal="pressed" from="contents/choices/D/answer_d" to="contents/Answer/current_answer" method="_on_answer_d_pressed"]
