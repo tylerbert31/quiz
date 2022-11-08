@@ -1,0 +1,94 @@
+{
+    "cc111": [
+        {
+            "question_num": "q1",
+            "question": "What was Meta Platforms Inc formerly known as?",
+            "correct_answer": "b",
+            "a": "Youtube",
+            "b": "Facebook",
+            "c": "Twitter",
+            "d": "TikTok"
+        },
+        {
+            "question_num": "q2",
+            "question": "The logo for luxury car maker Porsche features which animal?",
+            "correct_answer": "a",
+            "a": "Horse",
+            "b": "Pig",
+            "c": "Dog",
+            "d": "Chicken"
+        },
+        {
+            "question_num": "q3",
+            "question": "Which element is said to keep bones strong?",
+            "correct_answer": "d",
+            "a": "Protein",
+            "b": "Calories",
+            "c": "Fats",
+            "d": "Calcium"
+        },
+        {
+            "question_num": "q4",
+            "question": "Suriname is located on which continent?",
+            "correct_answer": "a",
+            "a": "South America",
+            "b": "North America",
+            "c": "South Africa",
+            "d": "West Virginia"
+        },
+        {
+            "question_num": "q5",
+            "question": "In tennis, what piece of fruit is found at the top of the men’s Wimbledon trophy?",
+            "correct_answer": "b",
+            "a": "Apple",
+            "b": "Pineapple",
+            "c": "Grapes",
+            "d": "Mango"
+        },
+        {
+            "question_num": "q6",
+            "question": "What is a female elephant called?",
+            "correct_answer": "a",
+            "a": "Cow",
+            "b": "Bear",
+            "c": "Deer",
+            "d": "Mamoth"
+        },
+        {
+            "question_num": "q7",
+            "question": "Franz Josef Strauss Airport is located in which country?",
+            "correct_answer": "a",
+            "a": "Germany",
+            "b": "Norway",
+            "c": "Italy",
+            "d": "France"
+        },
+        {
+            "question_num": "q8",
+            "question": "Which is the only planet in our solar system not named after a Roman or Greek god?",
+            "correct_answer": "d",
+            "a": "Jupiter",
+            "b": "Mars",
+            "c": "Saturn",
+            "d": "Earth"
+        },
+        {
+            "question_num": "q9",
+            "question": "In which sport is the Davis Cup contested?",
+            "correct_answer": "c",
+            "a": "Basketball",
+            "b": "Badminton",
+            "c": "Tennis",
+            "d": "Golf"
+        },
+        {
+            "question_num": "q10",
+            "question": "‘The Beach’ starring Leonardo DiCaprio is set in which country?",
+            "correct_answer": "b",
+            "a": "Singapore",
+            "b": "Thailand",
+            "c": "Vietnam",
+            "d": "Malaysia"
+        }
+    ]
+}

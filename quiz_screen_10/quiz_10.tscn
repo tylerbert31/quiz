@@ -376,6 +376,7 @@ rect_min_size = Vector2( 900, 0 )
 custom_fonts/font = SubResource( 12 )
 text = "Bill Gates"
 
+[connection signal="ready" from="." to="." method="_on_quiz_10_ready"]
 [connection signal="pressed" from="contents/number/prev" to="contents/number/1" method="_on_prev_pressed"]
 [connection signal="pressed" from="contents/number/next" to="contents/number/1" method="_on_next_pressed"]
 [connection signal="pressed" from="contents/choices/A/answer_a" to="contents/Answer/current_answer" method="_on_answer_a_pressed"]
